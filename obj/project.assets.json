@@ -176,11 +176,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\@專案資料\\顯揚資訊\\@小港2021-2022開發中\\@RtspMetaData相關\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.csproj",
+      "projectUniqueName": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.csproj",
       "projectName": "BoschMetadataAlertCapture",
-      "projectPath": "G:\\@專案資料\\顯揚資訊\\@小港2021-2022開發中\\@RtspMetaData相關\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.csproj",
+      "projectPath": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.csproj",
       "packagesPath": "C:\\Users\\seita\\.nuget\\packages\\",
-      "outputPath": "G:\\@專案資料\\顯揚資訊\\@小港2021-2022開發中\\@RtspMetaData相關\\Bosch_Metadata_Alert_Capture_v2\\obj\\",
+      "outputPath": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
