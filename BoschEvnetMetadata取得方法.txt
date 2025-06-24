@@ -1,0 +1,67 @@
+0.用onvif odm可以從攝影機串流中的metadata看到事件中的metadata格式
+1.從onvif odm中的攝影機live video界面中取得攝影機url   ex:rtsp://192.168.168.56/rtsp_tunnel?p=0&h26x=4&vcd=2
+2.用ffmpeg查詢rtsp sdp 找出傳輸資料的port(非video)  ex: ffmpeg.exe -i "rtsp://service:!QAZ2wsx@192.168.168.56/rtsp_tunnel?p=0&h26x=4&vcd=2"   
+
+    C:\ffmpeg\bin>ffmpeg.exe -i "rtsp://service:!QAZ2wsx@192.168.168.56/rtsp_tunnel?p=0&h26x=4&vcd=2"
+    ffmpeg version 7.1.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+      built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+      configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+      libavutil      59. 39.100 / 59. 39.100
+      libavcodec     61. 19.101 / 61. 19.101
+      libavformat    61.  7.100 / 61.  7.100
+      libavdevice    61.  3.100 / 61.  3.100
+      libavfilter    10.  4.100 / 10.  4.100
+      libswscale      8.  3.100 /  8.  3.100
+      libswresample   5.  3.100 /  5.  3.100
+      libpostproc    58.  3.100 / 58.  3.100
+    Input #0, rtsp, from 'rtsp://service:!QAZ2wsx@192.168.168.56/rtsp_tunnel?p=0&h26x=4&vcd=2':
+      Metadata:
+        title           : LIVE VIEW
+      Duration: N/A, start: 0.033333, bitrate: N/A
+      Stream #0:0: Video: h264 (Main), yuvj420p(pc, bt709/bt709/iec61966-2-1, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn
+      Stream #0:1: Data: none
+    At least one output file must be specified
+    
+    
+    這個範例中 "Stream #0:1: Data: none"     0:1是傳輸data
+
+
+3.用c#呼叫ffmpeg  ex:fmpeg -rtsp_transport tcp -i "rtsp://service:!QAZ2wsx@192.168.168.56/rtsp_tunnel?p=0&h26x=4&vcd=2" -map 0:1 -c copy -f data -
+  process回傳的就是rtsp中的metadata
+   
+     參數詳解
+     ffmpeg
+     代表： FFmpeg 主程式
+     說明： 這是執行整個指令的核心程式。
+     -rtsp_transport tcp
+     代表： 指定 RTSP 的傳輸協定為 TCP。
+     說明： RTSP 預設通常會優先使用 UDP 來傳輸影像資料，因為速度快、延遲低。但 UDP 不保證封包的順序與完整性，在網路環境不穩定時容易出現畫面破碎或遺失。此參數會強制 FFmpeg 使用 TCP 協定來接收串流，雖然延遲會稍微增加，但能確保資料傳輸的穩定與可靠性，是解決連線問題時常用的參數。
+     -i "rtsp://..."
+     代表： 指定輸入來源 (Input)。
+     說明： -i 後面接的是您攝影機的 RTSP 串流網址。FFmpeg 會將這個網址作為唯一的輸入來源（編號為 0）。
+     -map 0:1
+     代表： 選擇要處理的串流 (Stream Mapping)。
+     說明： 這是這個指令中最關鍵的參數之一。
+     0: 代表第一個輸入來源（也就是您用 -i 指定的那個 RTSP 串流）。
+     :1 代表該來源中的第二個串流（串流的編號從 0 開始）。
+     聯繫上下文： 在您上一個問題的 FFmpeg 輸出中，我們看到了兩個串流：
+     Stream #0:0: Video (影像流)
+     Stream #0:1: Data (資料流)
+     因此，-map 0:1 的作用就是明確地選擇那個 Data 資料流，而忽略 Stream #0:0 的影像流。
+     -c copy
+     代表： 指定編解碼器為「複製」(Codec: Copy)。
+     說明： -c 是 -codec 的縮寫。copy 是一個特殊的值，它告訴 FFmpeg 不要進行任何重新編碼。直接將從攝影機接收到的原始資料封包（來自 -map 0:1 所選的資料流）原封不動地複製到輸出端。這非常快速，且能保證資料的原始性。
+     -f data
+     代表： 強制指定輸出格式為「原始資料」(Force Format: Data)。
+     說明： -f 用於強制指定輸出檔案的容器格式。在這裡，data 格式告訴 FFmpeg 不要將輸出的內容打包成任何標準的媒體格式（如 MP4, MKV 等），而是將其視為純粹的二進位原始資料來處理。
+     -
+     代表： 指定輸出目標為「標準輸出」(Standard Output)。
+     說明： 在命令列中，單獨一個連字號 - 通常代表「標準輸出 (stdout)」，也就是您當前正在使用的命令提示字元視窗。
+     總結
+     這個指令的完整執行流程是：
+     
+     使用穩定的 TCP 協定連線到您的 RTSP 攝影機。
+     在攝影機提供的所有串流中，只選取第二個串流（也就是那個資料流）。
+     不對這個資料流做任何編碼或修改（copy）。
+     將這些原始資料直接印在您的命令列視窗上。
+     簡單來說，這個指令的用途是：「即時監聽並抓取攝影機 RTSP 串流中的『純資料』內容。」 這通常用於開發或偵錯，例如分析攝影機發送的移動偵測事件、警報觸發、或其他自定義的元數據 (Metadata)。 

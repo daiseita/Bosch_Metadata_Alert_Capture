@@ -1,0 +1,15 @@
+
+    appconfig
+
+    公用xml條件
+    <!-- 多個標籤用逗號分隔，例如: <tt:BoundingBox>,<tt:ColorCluster> --> &lt;tt:BoundingBox&gt;,&lt;tt:Object&gt;
+    <add key="MetadataXmlFilter" value=""/>
+    <!-- 啟用/關閉 事件間隔屏蔽 毫秒-->
+    <add key="StartEventTimeout" value="true"/>
+    <add key="EventTimeoutInterval" value="2000"/>
+
+    
+    單頻道xml絛件
+    MetadataFilter.XmlFilters
+    XML過濾類別  true : 全部設定符合  | false : 僅需符合一項
+    MetadataFilter.RequireAllFilters

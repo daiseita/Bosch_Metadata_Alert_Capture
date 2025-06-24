@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SkNeunaaD6M=",
+  "success": true,
+  "projectFilePath": "G:\\@專案資料\\顯揚資訊\\@小港2021-2022開發中\\@RtspMetaData相關\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\seita\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.6\\system.configuration.configurationmanager.9.0.6.nupkg.sha512",
+    "C:\\Users\\seita\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.6\\system.diagnostics.eventlog.9.0.6.nupkg.sha512",
+    "C:\\Users\\seita\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.6\\system.security.cryptography.protecteddata.9.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
