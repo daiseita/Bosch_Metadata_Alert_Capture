@@ -1,0 +1,48 @@
+﻿# 工作流程的名稱，會顯示在 GitHub Actions 頁面上
+name: .NET Test on PR
+
+# 設定觸發此工作流程的事件
+on:
+  # 當有 push 到 main 分支時觸發
+  push:
+    branches: [ main ]
+  # 當有 pull request 指向 main 分支時觸發
+  pull_request:
+    branches: [ main ]
+
+# 定義要執行的作業 (jobs)
+jobs:
+  # 作業的 ID，可自訂
+  build-and-test:
+    # 指定作業運行的環境，ubuntu-latest 是最常用且經濟的選擇
+    runs-on: ubuntu-latest
+
+    steps:
+    # 步驟 1：取得原始碼
+    # 使用 GitHub 官方的 checkout 動作，將儲存庫的程式碼下載到虛擬環境中
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # 步驟 2：設定 .NET 環境
+    # 使用官方的 setup-dotnet 動作，安裝指定的 .NET SDK 版本
+    # 根據您的專案檔案，您使用的是 .NET 8
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    # 步驟 3：還原 NuGet 套件
+    # 執行 dotnet restore 指令，下載專案所需的所有相依套件
+    - name: Restore dependencies
+      run: dotnet restore
+
+    # 步驟 4：建置解決方案
+    # 執行 dotnet build，--no-restore 參數是為了避免重複還原套件，增加效率
+    - name: Build
+      run: dotnet build --no-restore
+
+    # 步驟 5：執行測試
+    # 執行 dotnet test，--no-build 參數是避免重複建置
+    # --verbosity normal 讓日誌輸出較為簡潔
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
