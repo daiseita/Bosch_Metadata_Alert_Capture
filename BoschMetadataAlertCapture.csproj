@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BoschMetadataAlertCapture.Tests\**" />
+    <EmbeddedResource Remove="BoschMetadataAlertCapture.Tests\**" />
+    <None Remove="BoschMetadataAlertCapture.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.6" />
   </ItemGroup>
 
