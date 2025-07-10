@@ -1,0 +1,216 @@
+<tt:MetadataStream xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:tns1="http://www.onvif.org/ver10/topics">
+  <tt:VideoAnalytics>
+    <tt:Frame xmlns:tt="http://www.onvif.org/ver10/schema" UtcTime="2025-07-10T08:42:15.744Z" Colorspace="RGB">
+      <tt:Object ObjectId="157184">
+        <tt:Appearance>
+          <tt:Shape>
+            <tt:BoundingBox bottom="-0.57" top="-0.46" right="-0.09" left="-0.16">
+            </tt:BoundingBox>
+            <tt:CenterOfGravity x="-0.13" y="-0.50">
+            </tt:CenterOfGravity>
+            <tt:Polygon>
+              <tt:Point x="-0.15" y="-0.52">
+              </tt:Point>
+              <tt:Point x="-0.14" y="-0.52">
+              </tt:Point>
+              <tt:Point x="-0.13" y="-0.52">
+              </tt:Point>
+              <tt:Point x="-0.12" y="-0.52">
+              </tt:Point>
+              <tt:Point x="-0.11" y="-0.52">
+              </tt:Point>
+              <tt:Point x="-0.10" y="-0.52">
+              </tt:Point>
+              <tt:Point x="-0.09" y="-0.52">
+              </tt:Point>
+              <tt:Point x="-0.09" y="-0.45">
+              </tt:Point>
+              <tt:Point x="-0.10" y="-0.45">
+              </tt:Point>
+              <tt:Point x="-0.11" y="-0.45">
+              </tt:Point>
+              <tt:Point x="-0.12" y="-0.45">
+              </tt:Point>
+              <tt:Point x="-0.13" y="-0.45">
+              </tt:Point>
+              <tt:Point x="-0.14" y="-0.45">
+              </tt:Point>
+              <tt:Point x="-0.15" y="-0.45">
+              </tt:Point>
+            </tt:Polygon>
+          </tt:Shape>
+          <tt:Color>
+            <tt:ColorCluster>
+              <tt:Color X="223.13" Y="223.13" Z="223.13">
+              </tt:Color>
+              <tt:Weight>1.00</tt:Weight>
+            </tt:ColorCluster>
+          </tt:Color>
+        </tt:Appearance>
+        <tt:Track>
+          <tt:Point X="0.0800" Y="-0.6800" />
+          <tt:Point X="0.0600" Y="-0.7200" />
+          <tt:Point X="0.0400" Y="-0.7000" />
+          <tt:Point X="-0.1300" Y="-0.6200" />
+          <tt:Point X="-0.1400" Y="-0.6300" />
+          <tt:Point X="-0.1400" Y="-0.6100" />
+          <tt:Point X="-0.1400" Y="-0.5800" />
+          <tt:Point X="-0.1300" Y="-0.5600" />
+          <tt:Point X="-0.1300" Y="-0.5200" />
+          <tt:Point X="-0.1300" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1300" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5000" />
+          <tt:Point X="-0.1600" Y="-0.5200" />
+          <tt:Point X="-0.1400" Y="-0.5400" />
+          <tt:Point X="-0.1400" Y="-0.5000" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1300" Y="-0.5100" />
+          <tt:Point X="-0.1300" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1600" Y="-0.5100" />
+          <tt:Point X="-0.1600" Y="-0.5100" />
+          <tt:Point X="-0.1600" Y="-0.5100" />
+          <tt:Point X="-0.1600" Y="-0.5100" />
+          <tt:Point X="-0.1600" Y="-0.5100" />
+          <tt:Point X="-0.1600" Y="-0.5100" />
+          <tt:Point X="-0.1600" Y="-0.5100" />
+          <tt:Point X="-0.1600" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1500" Y="-0.5100" />
+          <tt:Point X="-0.1400" Y="-0.4800" />
+          <tt:Point X="-0.1400" Y="-0.4700" />
+          <tt:Point X="-0.1400" Y="-0.4700" />
+          <tt:Point X="-0.1400" Y="-0.4600" />
+          <tt:Point X="-0.1400" Y="-0.4600" />
+          <tt:Point X="-0.1400" Y="-0.4600" />
+          <tt:Point X="-0.1300" Y="-0.4600" />
+          <tt:Point X="-0.1300" Y="-0.4600" />
+          <tt:Point X="-0.1300" Y="-0.4700" />
+          <tt:Point X="-0.1300" Y="-0.4700" />
+          <tt:Point X="-0.1300" Y="-0.4700" />
+          <tt:Point X="-0.1300" Y="-0.4800" />
+          <tt:Point X="-0.1300" Y="-0.4800" />
+          <tt:Point X="-0.1300" Y="-0.4800" />
+          <tt:Point X="-0.1300" Y="-0.4800" />
+          <tt:Point X="-0.1300" Y="-0.4900" />
+          <tt:Point X="-0.1300" Y="-0.4900" />
+          <tt:Point X="-0.1300" Y="-0.4900" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5100" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+          <tt:Point X="-0.1300" Y="-0.5000" />
+        </tt:Track>
+      </tt:Object>
+    </tt:Frame>
+  </tt:VideoAnalytics>
+</tt:MetadataStream>

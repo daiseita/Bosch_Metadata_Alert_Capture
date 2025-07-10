@@ -1,0 +1,369 @@
+<tt:MetadataStream xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:tns1="http://www.onvif.org/ver10/topics">
+  <tt:VideoAnalytics>
+    <tt:Frame xmlns:tt="http://www.onvif.org/ver10/schema" UtcTime="2025-07-10T08:41:57.911Z" Colorspace="RGB">
+      <tt:Object ObjectId="156921">
+        <tt:Appearance>
+          <tt:Shape>
+            <tt:BoundingBox bottom="0.14" top="0.89" right="0.76" left="0.61">
+            </tt:BoundingBox>
+            <tt:CenterOfGravity x="0.68" y="0.52">
+            </tt:CenterOfGravity>
+            <tt:Polygon>
+              <tt:Point x="0.65" y="0.82">
+              </tt:Point>
+              <tt:Point x="0.65" y="0.78">
+              </tt:Point>
+              <tt:Point x="0.65" y="0.73">
+              </tt:Point>
+              <tt:Point x="0.64" y="0.69">
+              </tt:Point>
+              <tt:Point x="0.64" y="0.64">
+              </tt:Point>
+              <tt:Point x="0.63" y="0.60">
+              </tt:Point>
+              <tt:Point x="0.63" y="0.56">
+              </tt:Point>
+              <tt:Point x="0.61" y="0.50">
+              </tt:Point>
+              <tt:Point x="0.61" y="0.46">
+              </tt:Point>
+              <tt:Point x="0.61" y="0.41">
+              </tt:Point>
+              <tt:Point x="0.61" y="0.37">
+              </tt:Point>
+              <tt:Point x="0.61" y="0.32">
+              </tt:Point>
+              <tt:Point x="0.63" y="0.28">
+              </tt:Point>
+              <tt:Point x="0.63" y="0.23">
+              </tt:Point>
+              <tt:Point x="0.66" y="0.19">
+              </tt:Point>
+              <tt:Point x="0.68" y="0.19">
+              </tt:Point>
+              <tt:Point x="0.68" y="0.17">
+              </tt:Point>
+              <tt:Point x="0.69" y="0.17">
+              </tt:Point>
+              <tt:Point x="0.70" y="0.17">
+              </tt:Point>
+              <tt:Point x="0.71" y="0.19">
+              </tt:Point>
+              <tt:Point x="0.73" y="0.19">
+              </tt:Point>
+              <tt:Point x="0.75" y="0.23">
+              </tt:Point>
+              <tt:Point x="0.74" y="0.28">
+              </tt:Point>
+              <tt:Point x="0.74" y="0.32">
+              </tt:Point>
+              <tt:Point x="0.73" y="0.37">
+              </tt:Point>
+              <tt:Point x="0.73" y="0.41">
+              </tt:Point>
+              <tt:Point x="0.73" y="0.46">
+              </tt:Point>
+              <tt:Point x="0.73" y="0.50">
+              </tt:Point>
+              <tt:Point x="0.73" y="0.56">
+              </tt:Point>
+              <tt:Point x="0.74" y="0.60">
+              </tt:Point>
+              <tt:Point x="0.74" y="0.64">
+              </tt:Point>
+              <tt:Point x="0.74" y="0.69">
+              </tt:Point>
+              <tt:Point x="0.74" y="0.73">
+              </tt:Point>
+              <tt:Point x="0.73" y="0.78">
+              </tt:Point>
+              <tt:Point x="0.73" y="0.82">
+              </tt:Point>
+              <tt:Point x="0.73" y="0.87">
+              </tt:Point>
+              <tt:Point x="0.70" y="0.87">
+              </tt:Point>
+              <tt:Point x="0.69" y="0.88">
+              </tt:Point>
+              <tt:Point x="0.68" y="0.88">
+              </tt:Point>
+              <tt:Point x="0.68" y="0.89">
+              </tt:Point>
+              <tt:Point x="0.66" y="0.88">
+              </tt:Point>
+            </tt:Polygon>
+          </tt:Shape>
+        </tt:Appearance>
+        <tt:Track>
+          <tt:Point X="0.6900" Y="0.4400" />
+          <tt:Point X="0.6700" Y="0.4800" />
+          <tt:Point X="0.6700" Y="0.4800" />
+          <tt:Point X="0.6800" Y="0.5200" />
+        </tt:Track>
+      </tt:Object>
+      <tt:Object ObjectId="156844">
+        <tt:Appearance>
+          <tt:Shape>
+            <tt:BoundingBox bottom="0.54" top="0.76" right="0.19" left="0.11">
+            </tt:BoundingBox>
+            <tt:CenterOfGravity x="0.14" y="0.66">
+            </tt:CenterOfGravity>
+            <tt:Polygon>
+              <tt:Point x="0.13" y="0.74">
+              </tt:Point>
+              <tt:Point x="0.13" y="0.73">
+              </tt:Point>
+              <tt:Point x="0.13" y="0.72">
+              </tt:Point>
+              <tt:Point x="0.12" y="0.70">
+              </tt:Point>
+              <tt:Point x="0.12" y="0.69">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.68">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.67">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.66">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.64">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.63">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.62">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.60">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.59">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.58">
+              </tt:Point>
+              <tt:Point x="0.11" y="0.57">
+              </tt:Point>
+              <tt:Point x="0.13" y="0.57">
+              </tt:Point>
+              <tt:Point x="0.13" y="0.58">
+              </tt:Point>
+              <tt:Point x="0.13" y="0.59">
+              </tt:Point>
+              <tt:Point x="0.14" y="0.60">
+              </tt:Point>
+              <tt:Point x="0.14" y="0.62">
+              </tt:Point>
+              <tt:Point x="0.15" y="0.63">
+              </tt:Point>
+              <tt:Point x="0.15" y="0.64">
+              </tt:Point>
+              <tt:Point x="0.16" y="0.66">
+              </tt:Point>
+              <tt:Point x="0.16" y="0.67">
+              </tt:Point>
+              <tt:Point x="0.16" y="0.68">
+              </tt:Point>
+              <tt:Point x="0.16" y="0.69">
+              </tt:Point>
+              <tt:Point x="0.16" y="0.70">
+              </tt:Point>
+              <tt:Point x="0.17" y="0.72">
+              </tt:Point>
+              <tt:Point x="0.17" y="0.73">
+              </tt:Point>
+              <tt:Point x="0.17" y="0.74">
+              </tt:Point>
+              <tt:Point x="0.17" y="0.76">
+              </tt:Point>
+            </tt:Polygon>
+          </tt:Shape>
+          <tt:Color>
+            <tt:ColorCluster>
+              <tt:Color X="95.63" Y="95.63" Z="95.63">
+              </tt:Color>
+              <tt:Weight>0.62</tt:Weight>
+            </tt:ColorCluster>
+            <tt:ColorCluster>
+              <tt:Color X="159.38" Y="159.38" Z="159.38">
+              </tt:Color>
+              <tt:Weight>0.38</tt:Weight>
+            </tt:ColorCluster>
+          </tt:Color>
+        </tt:Appearance>
+        <tt:Track>
+          <tt:Point X="0.1300" Y="0.7100" />
+          <tt:Point X="0.1400" Y="0.7000" />
+          <tt:Point X="0.1400" Y="0.6600" />
+          <tt:Point X="0.1600" Y="0.6700" />
+          <tt:Point X="0.1600" Y="0.6800" />
+          <tt:Point X="0.1600" Y="0.6800" />
+          <tt:Point X="0.1400" Y="0.6600" />
+          <tt:Point X="0.1500" Y="0.6400" />
+          <tt:Point X="0.1400" Y="0.6400" />
+          <tt:Point X="0.1400" Y="0.6600" />
+          <tt:Point X="0.1400" Y="0.6600" />
+        </tt:Track>
+      </tt:Object>
+      <tt:Object ObjectId="156838">
+        <tt:Appearance>
+          <tt:Shape>
+            <tt:BoundingBox bottom="-0.16" top="0.11" right="0.22" left="0.13">
+            </tt:BoundingBox>
+            <tt:CenterOfGravity x="0.17" y="-0.01">
+            </tt:CenterOfGravity>
+            <tt:Polygon>
+              <tt:Point x="0.16" y="0.09">
+              </tt:Point>
+              <tt:Point x="0.15" y="0.08">
+              </tt:Point>
+              <tt:Point x="0.15" y="0.06">
+              </tt:Point>
+              <tt:Point x="0.14" y="0.04">
+              </tt:Point>
+              <tt:Point x="0.14" y="0.03">
+              </tt:Point>
+              <tt:Point x="0.14" y="0.01">
+              </tt:Point>
+              <tt:Point x="0.13" y="0.00">
+              </tt:Point>
+              <tt:Point x="0.13" y="-0.01">
+              </tt:Point>
+              <tt:Point x="0.13" y="-0.02">
+              </tt:Point>
+              <tt:Point x="0.13" y="-0.05">
+              </tt:Point>
+              <tt:Point x="0.13" y="-0.06">
+              </tt:Point>
+              <tt:Point x="0.14" y="-0.07">
+              </tt:Point>
+              <tt:Point x="0.14" y="-0.09">
+              </tt:Point>
+              <tt:Point x="0.15" y="-0.10">
+              </tt:Point>
+              <tt:Point x="0.17" y="-0.12">
+              </tt:Point>
+              <tt:Point x="0.18" y="-0.12">
+              </tt:Point>
+              <tt:Point x="0.19" y="-0.10">
+              </tt:Point>
+              <tt:Point x="0.19" y="-0.09">
+              </tt:Point>
+              <tt:Point x="0.19" y="-0.07">
+              </tt:Point>
+              <tt:Point x="0.19" y="-0.06">
+              </tt:Point>
+              <tt:Point x="0.19" y="-0.05">
+              </tt:Point>
+              <tt:Point x="0.20" y="-0.02">
+              </tt:Point>
+              <tt:Point x="0.19" y="-0.01">
+              </tt:Point>
+              <tt:Point x="0.19" y="0.00">
+              </tt:Point>
+              <tt:Point x="0.19" y="0.01">
+              </tt:Point>
+              <tt:Point x="0.20" y="0.03">
+              </tt:Point>
+              <tt:Point x="0.20" y="0.04">
+              </tt:Point>
+              <tt:Point x="0.19" y="0.06">
+              </tt:Point>
+              <tt:Point x="0.19" y="0.08">
+              </tt:Point>
+              <tt:Point x="0.19" y="0.09">
+              </tt:Point>
+              <tt:Point x="0.18" y="0.11">
+              </tt:Point>
+            </tt:Polygon>
+          </tt:Shape>
+          <tt:Color>
+            <tt:ColorCluster>
+              <tt:Color X="159.38" Y="159.38" Z="159.38">
+              </tt:Color>
+              <tt:Weight>0.80</tt:Weight>
+            </tt:ColorCluster>
+            <tt:ColorCluster>
+              <tt:Color X="31.88" Y="21.25" Z="21.25">
+              </tt:Color>
+              <tt:Weight>0.20</tt:Weight>
+            </tt:ColorCluster>
+          </tt:Color>
+        </tt:Appearance>
+        <tt:Track>
+          <tt:Point X="0.1900" Y="0.0300" />
+          <tt:Point X="0.1800" Y="0.0200" />
+          <tt:Point X="0.1800" Y="0.0100" />
+          <tt:Point X="0.1700" Y="0.0000" />
+          <tt:Point X="0.1700" Y="0.0000" />
+          <tt:Point X="0.1700" Y="-0.0100" />
+          <tt:Point X="0.1700" Y="-0.0100" />
+        </tt:Track>
+      </tt:Object>
+      <tt:Object ObjectId="156898">
+        <tt:Appearance>
+          <tt:Shape>
+            <tt:BoundingBox bottom="-0.84" top="-0.71" right="0.63" left="0.57">
+            </tt:BoundingBox>
+            <tt:CenterOfGravity x="0.59" y="-0.77">
+            </tt:CenterOfGravity>
+            <tt:Polygon>
+              <tt:Point x="0.58" y="-0.71">
+              </tt:Point>
+              <tt:Point x="0.58" y="-0.72">
+              </tt:Point>
+              <tt:Point x="0.58" y="-0.73">
+              </tt:Point>
+              <tt:Point x="0.58" y="-0.75">
+              </tt:Point>
+              <tt:Point x="0.58" y="-0.76">
+              </tt:Point>
+              <tt:Point x="0.58" y="-0.77">
+              </tt:Point>
+              <tt:Point x="0.58" y="-0.78">
+              </tt:Point>
+              <tt:Point x="0.58" y="-0.79">
+              </tt:Point>
+              <tt:Point x="0.59" y="-0.80">
+              </tt:Point>
+              <tt:Point x="0.60" y="-0.81">
+              </tt:Point>
+              <tt:Point x="0.61" y="-0.81">
+              </tt:Point>
+              <tt:Point x="0.61" y="-0.80">
+              </tt:Point>
+              <tt:Point x="0.60" y="-0.80">
+              </tt:Point>
+              <tt:Point x="0.60" y="-0.79">
+              </tt:Point>
+              <tt:Point x="0.59" y="-0.78">
+              </tt:Point>
+              <tt:Point x="0.59" y="-0.77">
+              </tt:Point>
+              <tt:Point x="0.59" y="-0.76">
+              </tt:Point>
+              <tt:Point x="0.59" y="-0.75">
+              </tt:Point>
+              <tt:Point x="0.60" y="-0.73">
+              </tt:Point>
+              <tt:Point x="0.60" y="-0.72">
+              </tt:Point>
+              <tt:Point x="0.60" y="-0.71">
+              </tt:Point>
+              <tt:Point x="0.59" y="-0.70">
+              </tt:Point>
+            </tt:Polygon>
+          </tt:Shape>
+          <tt:Color>
+            <tt:ColorCluster>
+              <tt:Color X="31.88" Y="31.88" Z="31.88">
+              </tt:Color>
+              <tt:Weight>1.00</tt:Weight>
+            </tt:ColorCluster>
+          </tt:Color>
+        </tt:Appearance>
+        <tt:Track>
+          <tt:Point X="0.6100" Y="-0.8100" />
+          <tt:Point X="0.6100" Y="-0.7800" />
+          <tt:Point X="0.6000" Y="-0.7700" />
+          <tt:Point X="0.5900" Y="-0.7700" />
+        </tt:Track>
+      </tt:Object>
+    </tt:Frame>
+  </tt:VideoAnalytics>
+</tt:MetadataStream>

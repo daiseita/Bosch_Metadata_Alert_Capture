@@ -20,11 +20,12 @@ namespace BoschMetadataAlertCapture
         /// xmlFilters : 過濾xml標籤
         /// requireAllFilters : 是否需要完全符合/僅符合一項        
         /// </remarks>               
-        public void AddAndRun(string cameraName, string rtspUrl, string[] xmlFilters =null, bool requireAllFilters  =false)
+        public void AddAndRun(string cameraName, string rtspUrl, string[] xmlFilters =null, bool requireAllFilters  =false ,bool saveSnapshotOnEvent = false)
         {            
             var receiver = new CameraMetadataReceiver(cameraName, rtspUrl) { 
             
-                Filter = new MetadataFilter() { XmlFilters = xmlFilters ?? Array.Empty<string>(), RequireAllFilters = requireAllFilters }
+                Filter = new MetadataFilter() { XmlFilters = xmlFilters ?? Array.Empty<string>(), RequireAllFilters = requireAllFilters },
+                SaveSnapshotOnEvent = saveSnapshotOnEvent                   
             };
             var task = receiver.StartReceivingAsync();
             runningTasks.Add(task);

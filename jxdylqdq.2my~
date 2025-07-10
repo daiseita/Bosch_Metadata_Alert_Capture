@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Xml;
+
+namespace BoschMetadataAlertCapture
+{
+    public class TrackManager
+    {
+        private readonly Dictionary<string, List<(double X, double Y)>> _objectTracks
+            = new Dictionary<string, List<(double X, double Y)>>();
+
+        public bool TrackEnabled { get; set; }
+
+        public TrackManager(bool enabled)
+        {
+            TrackEnabled = enabled;
+        }
+
+        public void AddTrack(string objectId, double x, double y)
+        {
+            if (!TrackEnabled)
+                return;
+
+            if (!_objectTracks.ContainsKey(objectId))
+                _objectTracks[objectId] = new List<(double, double)>();
+
+            _objectTracks[objectId].Add((x, y));
+        }
+
+        public void AppendTracksToXml(XmlDocument xmlDoc)
+        {
+            if (!TrackEnabled)
+                return;
+
+            var nsmgr = new XmlNamespaceManager(xmlDoc.NameTable);
+            nsmgr.AddNamespace("tt", "http://www.onvif.org/ver10/schema");
+
+            var objectNodes = xmlDoc.SelectNodes("//tt:Object", nsmgr);
+            if (objectNodes == null) return;
+
+            foreach (XmlElement objNode in objectNodes)
+            {
+                var objectId = objNode.GetAttribute("ObjectId");
+                if (string.IsNullOrEmpty(objectId)) continue;
+
+                if (_objectTracks.TryGetValue(objectId, out var trackPoints))
+                {
+                    var trackElement = xmlDoc.CreateElement("tt:Track", nsmgr.LookupNamespace("tt"));
+                    foreach (var (x, y) in trackPoints)
+                    {
+                        var pointElement = xmlDoc.CreateElement("tt:Point", nsmgr.LookupNamespace("tt"));
+                        pointElement.SetAttribute("x", x.ToString("F3"));
+                        pointElement.SetAttribute("y", y.ToString("F3"));
+                        trackElement.AppendChild(pointElement);
+                    }
+                    objNode.AppendChild(trackElement);
+                }
+            }
+        }
+    }
+}

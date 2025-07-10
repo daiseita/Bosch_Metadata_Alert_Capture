@@ -1,14 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace BoschMetadataAlertCapture
 {
-    /// <summary>
-    /// RTSP metadata 接收器，使用 FFmpeg 連線並儲存符合條件的事件
-    /// </summary>
+    public enum OutputType
+    {
+        Xml,
+        Json
+    }
+
     public class CameraMetadataReceiver
     {
         public string RtspUrl { get; private set; }
@@ -17,12 +23,19 @@ namespace BoschMetadataAlertCapture
         public MetadataFilter Filter { get; set; }
         private EventTimeoutManager TimeoutManager { get; set; }
 
-        public CameraMetadataReceiver(string cameraName, string rtspUrl)
+        public OutputType OutputType { get; set; }
+        public bool SaveSnapshotOnEvent { get; set; } = false;
+
+        private TrackManager TrackManager { get; set; }
+
+        public CameraMetadataReceiver(string cameraName, string rtspUrl, OutputType outputType = OutputType.Xml)
         {
             CameraName = cameraName;
             RtspUrl = rtspUrl;
             Filter = new MetadataFilter();
             TimeoutManager = new EventTimeoutManager();
+            OutputType = outputType;
+            TrackManager = new TrackManager();
         }
 
         public async Task StartReceivingAsync()
@@ -48,39 +61,39 @@ namespace BoschMetadataAlertCapture
 
             Console.WriteLine($"[{CameraName}] 📡 開始接收 metadata 事件...");
 
-            var process = Process.Start(psi);
-            if (process != null)
+            using (var process = Process.Start(psi))
             {
-                var reader = process.StandardOutput;
-                var charBuffer = new char[4096];
-                int bytesRead;
-                string textBuffer = "";
-
-                while ((bytesRead = await reader.ReadAsync(charBuffer, 0, charBuffer.Length)) > 0)
+                if (process != null)
                 {
-                    textBuffer += new string(charBuffer, 0, bytesRead);
+                    var reader = process.StandardOutput;
+                    var charBuffer = new char[4096];
+                    int bytesRead;
+                    string textBuffer = "";
 
-                    int endIndex;
-                    while ((endIndex = textBuffer.IndexOf("</tt:MetadataStream>", StringComparison.OrdinalIgnoreCase)) >= 0)
+                    while ((bytesRead = await reader.ReadAsync(charBuffer, 0, charBuffer.Length)) > 0)
                     {
-                        var metadataXml = textBuffer.Substring(0, endIndex + "</tt:MetadataStream>".Length);
-                        textBuffer = textBuffer.Substring(endIndex + "</tt:MetadataStream>".Length);
+                        textBuffer += new string(charBuffer, 0, bytesRead);
 
-                        if (Filter.ShouldSave(metadataXml))
+                        int endIndex;
+                        while ((endIndex = textBuffer.IndexOf("</tt:MetadataStream>", StringComparison.OrdinalIgnoreCase)) >= 0)
                         {
-                            if (TimeoutManager.IsTimeoutEnabled && !TimeoutManager.CheckAndUpdateTimeout(metadataXml))
-                                continue;
+                            var metadataXml = textBuffer.Substring(0, endIndex + "</tt:MetadataStream>".Length);
+                            textBuffer = textBuffer[(endIndex + "</tt:MetadataStream>".Length)..];
 
-                            string filename = $"event/{CameraName}_{DateTime.Now:yyyyMMdd_HHmmssfff}.xml";
-                            File.WriteAllText(filename, metadataXml);
-                            Console.WriteLine($"[{CameraName}] 🚨 偵測事件，已儲存 {filename}");
+                            if (Filter.ShouldSave(metadataXml))
+                            {
+                                if (TimeoutManager.IsTimeoutEnabled && !TimeoutManager.CheckAndUpdateTimeout(metadataXml))
+                                    continue;
+
+                                await SaveMetadataAsync(metadataXml);
+                            }
                         }
                     }
-                }
 
-                string errorOutput = await process.StandardError.ReadToEndAsync();
-                process.WaitForExit();
-                Console.WriteLine($"[{CameraName}] 📤 FFmpeg 結束，錯誤輸出：{errorOutput}");
+                    string errorOutput = await process.StandardError.ReadToEndAsync();
+                    process.WaitForExit();
+                    Console.WriteLine($"[{CameraName}] 📤 FFmpeg 結束，錯誤輸出：{errorOutput}");
+                }
             }
         }
 
@@ -95,15 +108,121 @@ namespace BoschMetadataAlertCapture
                 CreateNoWindow = true
             };
 
-            var process = Process.Start(psi);
-            if (process != null)
+            using (var process = Process.Start(psi))
             {
-                string result = await process.StandardOutput.ReadToEndAsync();
-                process.WaitForExit();
+                if (process != null)
+                {
+                    string result = await process.StandardOutput.ReadToEndAsync();
+                    process.WaitForExit();
 
-                return result.Contains("data");
+                    return result.Contains("data");
+                }
             }
             return false;
+        }
+
+        private async Task SaveMetadataAsync(string metadataXml)
+        {
+            string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmssfff");
+            string baseFilename = $"event/{CameraName}_{timestamp}";
+            string metadataFilename;
+
+            var xmlDoc = new XmlDocument();
+            try
+            {
+                xmlDoc.LoadXml(metadataXml);
+            }
+            catch (XmlException ex)
+            {
+                Console.WriteLine($"[{CameraName}] ❌ Metadata 解析錯誤：{ex.Message}");
+                return;
+            }
+
+            // 更新軌跡
+            TrackManager.UpdateObjectTracks(xmlDoc);
+
+            if (OutputType == OutputType.Xml)
+            {
+                metadataFilename = $"{baseFilename}.xml";
+                xmlDoc.Save(metadataFilename);
+            }
+            else
+            {
+                string jsonText = JsonSerializer.Serialize(XmlToDictionary(xmlDoc.DocumentElement), new JsonSerializerOptions { WriteIndented = true });
+                metadataFilename = $"{baseFilename}.json";
+                await File.WriteAllTextAsync(metadataFilename, jsonText);
+            }
+
+            Console.WriteLine($"[{CameraName}] 🚨 偵測事件，已儲存 {metadataFilename}");
+
+            if (SaveSnapshotOnEvent)
+            {
+                string snapshotFilename = $"{baseFilename}.jpg";
+                CaptureSnapshot(snapshotFilename);
+            }
+        }
+
+        private void CaptureSnapshot(string filePath)
+        {
+            try
+            {
+                var psi = new ProcessStartInfo
+                {
+                    FileName = @"C:\ffmpeg\bin\ffmpeg.exe",
+                    Arguments = $"-rtsp_transport tcp -i \"{RtspUrl}\" -frames:v 1 -q:v 2 \"{filePath}\"",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+
+                using (var process = Process.Start(psi))
+                {
+                    process?.WaitForExit();
+                }
+
+                if (File.Exists(filePath))
+                    Console.WriteLine($"[{CameraName}] 📸 快照儲存完成：{filePath}");
+                else
+                    Console.WriteLine($"[{CameraName}] ❌ 快照儲存失敗！");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[{CameraName}] ❌ 快照錯誤：{ex.Message}");
+            }
+        }
+
+        private Dictionary<string, object> XmlToDictionary(XmlElement element)
+        {
+            var dict = new Dictionary<string, object>();
+
+            foreach (XmlAttribute attr in element.Attributes)
+                dict[$"@{attr.Name}"] = attr.Value;
+
+            foreach (XmlNode child in element.ChildNodes)
+            {
+                if (child is XmlElement childElement)
+                {
+                    var childDict = XmlToDictionary(childElement);
+
+                    if (dict.ContainsKey(childElement.Name))
+                    {
+                        var existing = dict[childElement.Name];
+                        if (existing is List<object> list)
+                            list.Add(childDict);
+                        else
+                            dict[childElement.Name] = new List<object> { existing, childDict };
+                    }
+                    else
+                    {
+                        dict[childElement.Name] = childDict;
+                    }
+                }
+                else if (child is XmlText textNode)
+                {
+                    dict["#text"] = textNode.Value;
+                }
+            }
+
+            return dict;
         }
     }
 }
