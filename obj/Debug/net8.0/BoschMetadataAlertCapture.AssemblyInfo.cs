@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoschMetadataAlertCapture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d23a76d46e701521b757fe1cbf9ff309d96da118")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+379e05ceca5778c0fb9da1fe2fbbfe9976ea6088")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoschMetadataAlertCapture")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BoschMetadataAlertCapture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
