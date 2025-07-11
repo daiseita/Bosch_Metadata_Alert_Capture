@@ -1,0 +1,116 @@
+<tt:MetadataStream xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:tns1="http://www.onvif.org/ver10/topics">
+  <tt:VideoAnalytics>
+    <tt:Frame xmlns:tt="http://www.onvif.org/ver10/schema" UtcTime="2025-07-11T07:58:27.072Z" Colorspace="RGB">
+      <tt:Object ObjectId="188182">
+        <tt:Appearance>
+          <tt:Shape>
+            <tt:BoundingBox bottom="-0.82" top="1.06" right="0.57" left="-0.07">
+            </tt:BoundingBox>
+            <tt:CenterOfGravity x="0.24" y="0.12">
+            </tt:CenterOfGravity>
+            <tt:Polygon>
+              <tt:Point x="0.00" y="0.89">
+              </tt:Point>
+              <tt:Point x="-0.02" y="0.77">
+              </tt:Point>
+              <tt:Point x="-0.03" y="0.66">
+              </tt:Point>
+              <tt:Point x="-0.05" y="0.53">
+              </tt:Point>
+              <tt:Point x="-0.05" y="0.42">
+              </tt:Point>
+              <tt:Point x="-0.05" y="0.30">
+              </tt:Point>
+              <tt:Point x="-0.05" y="0.19">
+              </tt:Point>
+              <tt:Point x="-0.05" y="0.07">
+              </tt:Point>
+              <tt:Point x="-0.05" y="-0.03">
+              </tt:Point>
+              <tt:Point x="-0.03" y="-0.16">
+              </tt:Point>
+              <tt:Point x="-0.02" y="-0.27">
+              </tt:Point>
+              <tt:Point x="0.00" y="-0.39">
+              </tt:Point>
+              <tt:Point x="0.00" y="-0.50">
+              </tt:Point>
+              <tt:Point x="0.01" y="-0.62">
+              </tt:Point>
+              <tt:Point x="0.02" y="-0.73">
+              </tt:Point>
+              <tt:Point x="0.52" y="-0.73">
+              </tt:Point>
+              <tt:Point x="0.52" y="-0.62">
+              </tt:Point>
+              <tt:Point x="0.54" y="-0.50">
+              </tt:Point>
+              <tt:Point x="0.54" y="-0.39">
+              </tt:Point>
+              <tt:Point x="0.52" y="-0.27">
+              </tt:Point>
+              <tt:Point x="0.52" y="-0.16">
+              </tt:Point>
+              <tt:Point x="0.51" y="-0.03">
+              </tt:Point>
+              <tt:Point x="0.51" y="0.07">
+              </tt:Point>
+              <tt:Point x="0.51" y="0.19">
+              </tt:Point>
+              <tt:Point x="0.51" y="0.30">
+              </tt:Point>
+              <tt:Point x="0.52" y="0.42">
+              </tt:Point>
+              <tt:Point x="0.52" y="0.53">
+              </tt:Point>
+              <tt:Point x="0.52" y="0.66">
+              </tt:Point>
+              <tt:Point x="0.51" y="0.77">
+              </tt:Point>
+              <tt:Point x="0.51" y="0.89">
+              </tt:Point>
+              <tt:Point x="0.49" y="1.00">
+              </tt:Point>
+              <tt:Point x="0.42" y="1.00">
+              </tt:Point>
+              <tt:Point x="0.38" y="1.02">
+              </tt:Point>
+              <tt:Point x="0.34" y="1.02">
+              </tt:Point>
+              <tt:Point x="0.30" y="1.02">
+              </tt:Point>
+              <tt:Point x="0.26" y="1.01">
+              </tt:Point>
+              <tt:Point x="0.23" y="1.00">
+              </tt:Point>
+              <tt:Point x="0.19" y="1.00">
+              </tt:Point>
+              <tt:Point x="0.14" y="1.00">
+              </tt:Point>
+              <tt:Point x="0.11" y="1.01">
+              </tt:Point>
+              <tt:Point x="0.07" y="1.02">
+              </tt:Point>
+            </tt:Polygon>
+          </tt:Shape>
+          <tt:Color>
+            <tt:ColorCluster>
+              <tt:Color X="31.88" Y="31.88" Z="31.88">
+              </tt:Color>
+              <tt:Weight>0.77</tt:Weight>
+            </tt:ColorCluster>
+            <tt:ColorCluster>
+              <tt:Color X="159.38" Y="159.38" Z="159.38">
+              </tt:Color>
+              <tt:Weight>0.23</tt:Weight>
+            </tt:ColorCluster>
+          </tt:Color>
+        </tt:Appearance>
+        <tt:Track>
+          <tt:Point X="-0.3100" Y="0.0200" Timestamp="2025-07-11T15:58:25.4095972+08:00" />
+          <tt:Point X="0.2400" Y="0.1200" Timestamp="2025-07-11T15:58:25.9276519+08:00" />
+        </tt:Track>
+      </tt:Object>
+    </tt:Frame>
+  </tt:VideoAnalytics>
+</tt:MetadataStream>

@@ -139,7 +139,7 @@ namespace BoschMetadataAlertCapture
             }
 
             // 更新軌跡
-            TrackManager.UpdateObjectTracks(xmlDoc);
+            TrackManager.UpdateObjectTracks(xmlDoc);                       
 
             if (OutputType == OutputType.Xml)
             {
@@ -156,7 +156,7 @@ namespace BoschMetadataAlertCapture
             Console.WriteLine($"[{CameraName}] 🚨 偵測事件，已儲存 {metadataFilename}");
 
             if (SaveSnapshotOnEvent)
-            {
+            {               
                 string snapshotFilename = $"{baseFilename}.jpg";
                 CaptureSnapshot(snapshotFilename);
             }
