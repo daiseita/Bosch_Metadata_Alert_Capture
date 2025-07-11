@@ -3,48 +3,60 @@
   "WorkspaceRootPath": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\camerametadatareceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:camerametadatareceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\camerametadatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:camerametadatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\eventtimeoutmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:eventtimeoutmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\trackmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:trackmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\metadatafilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:metadatafilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\boschevnetmetadata\u53D6\u5F97\u65B9\u6CD5.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:boschevnetmetadata\u53D6\u5F97\u65B9\u6CD5.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\boschmetadataalertcapture.tests\\trackmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|solutionrelative:boschmetadataalertcapture.tests\\trackmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\boschmetadataalertcapture.tests\\eventtimeoutmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|solutionrelative:boschmetadataalertcapture.tests\\eventtimeoutmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\boschmetadataalertcapture.tests\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|solutionrelative:boschmetadataalertcapture.tests\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\trackmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:trackmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\boschmetadataalertcapture.tests\\metadatafiltertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|solutionrelative:boschmetadataalertcapture.tests\\metadatafiltertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\boschmetadataalertcapture.tests\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A817C0C-2A49-4AF3-AFE3-B61E1B224B3E}|BoschMetadataAlertCapture.Tests\\BoschMetadataAlertCapture.Tests.csproj|solutionrelative:boschmetadataalertcapture.tests\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\camerametadatareceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:camerametadatareceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\eventtimeoutmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:eventtimeoutmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\camerametadatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:camerametadatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\\u8AAA\u660E.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:\u8AAA\u660E.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\\u6AA2\u67E5\u651D\u5F71\u6A5Fplayload.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:\u6AA2\u67E5\u651D\u5F71\u6A5Fplayload.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\boschevnetmetadata\u53D6\u5F97\u65B9\u6CD5.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:boschevnetmetadata\u53D6\u5F97\u65B9\u6CD5.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\metadatafilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|solutionrelative:metadatafilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DA60DFA-E5F0-4E58-8F41-A644057CFA1D}|BoschMetadataAlertCapture.csproj|d:\\gitbase\\bosch_metadata_alert_capture_v2\\.github\\workflows\\dotnet-test.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -66,24 +78,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "TrackManagerTests.cs",
+              "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.Tests\\TrackManagerTests.cs",
+              "RelativeDocumentMoniker": "BoschMetadataAlertCapture.Tests\\TrackManagerTests.cs",
+              "ToolTip": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.Tests\\TrackManagerTests.cs",
+              "RelativeToolTip": "BoschMetadataAlertCapture.Tests\\TrackManagerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T09:31:38.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "\u8AAA\u660E.txt",
+              "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\\u8AAA\u660E.txt",
+              "RelativeDocumentMoniker": "\u8AAA\u660E.txt",
+              "ToolTip": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\\u8AAA\u660E.txt",
+              "RelativeToolTip": "\u8AAA\u660E.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-11T02:52:08.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "\u6AA2\u67E5\u651D\u5F71\u6A5Fplayload.txt",
+              "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\\u6AA2\u67E5\u651D\u5F71\u6A5Fplayload.txt",
+              "RelativeDocumentMoniker": "\u6AA2\u67E5\u651D\u5F71\u6A5Fplayload.txt",
+              "ToolTip": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\\u6AA2\u67E5\u651D\u5F71\u6A5Fplayload.txt",
+              "RelativeToolTip": "\u6AA2\u67E5\u651D\u5F71\u6A5Fplayload.txt",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-11T02:52:03.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TrackManager.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\TrackManager.cs",
               "RelativeDocumentMoniker": "TrackManager.cs",
               "ToolTip": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\TrackManager.cs",
               "RelativeToolTip": "TrackManager.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAADwv1kAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAADwv04AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T09:09:16.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "EventTimeoutManagerTests.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.Tests\\EventTimeoutManagerTests.cs",
               "RelativeDocumentMoniker": "BoschMetadataAlertCapture.Tests\\EventTimeoutManagerTests.cs",
@@ -91,11 +142,12 @@
               "RelativeToolTip": "BoschMetadataAlertCapture.Tests\\EventTimeoutManagerTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T06:22:31.905Z"
+              "WhenOpened": "2025-06-25T06:22:31.905Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "MetadataFilterTests.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.Tests\\MetadataFilterTests.cs",
               "RelativeDocumentMoniker": "BoschMetadataAlertCapture.Tests\\MetadataFilterTests.cs",
@@ -103,11 +155,12 @@
               "RelativeToolTip": "BoschMetadataAlertCapture.Tests\\MetadataFilterTests.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAwwDQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T06:21:24.689Z"
+              "WhenOpened": "2025-06-25T06:21:24.689Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "MSTestSettings.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.Tests\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "BoschMetadataAlertCapture.Tests\\MSTestSettings.cs",
@@ -115,11 +168,12 @@
               "RelativeToolTip": "BoschMetadataAlertCapture.Tests\\MSTestSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T06:21:23.702Z"
+              "WhenOpened": "2025-06-25T06:21:23.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "dotnet-test.yml",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\.github\\workflows\\dotnet-test.yml",
               "RelativeDocumentMoniker": ".github\\workflows\\dotnet-test.yml",
@@ -131,20 +185,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CameraMetadataReceiver.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\CameraMetadataReceiver.cs",
               "RelativeDocumentMoniker": "CameraMetadataReceiver.cs",
               "ToolTip": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\CameraMetadataReceiver.cs",
               "RelativeToolTip": "CameraMetadataReceiver.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAADwv+QAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAEwJ4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T10:24:24.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "BoschMetadataAlertCapture.csproj",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschMetadataAlertCapture.csproj",
               "RelativeDocumentMoniker": "BoschMetadataAlertCapture.csproj",
@@ -152,50 +206,50 @@
               "RelativeToolTip": "BoschMetadataAlertCapture.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-18T07:28:02.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T07:28:02.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "CameraMetadataManager.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\CameraMetadataManager.cs",
               "RelativeDocumentMoniker": "CameraMetadataManager.cs",
               "ToolTip": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\CameraMetadataManager.cs",
               "RelativeToolTip": "CameraMetadataManager.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T08:27:13.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "BoschEvnetMetadata\u53D6\u5F97\u65B9\u6CD5.txt",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschEvnetMetadata\u53D6\u5F97\u65B9\u6CD5.txt",
               "RelativeDocumentMoniker": "BoschEvnetMetadata\u53D6\u5F97\u65B9\u6CD5.txt",
               "ToolTip": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\BoschEvnetMetadata\u53D6\u5F97\u65B9\u6CD5.txt",
               "RelativeToolTip": "BoschEvnetMetadata\u53D6\u5F97\u65B9\u6CD5.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-06-19T07:14:00.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T06:33:20.783Z"
+              "WhenOpened": "2025-06-17T06:33:20.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "MetadataFilter.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\MetadataFilter.cs",
               "RelativeDocumentMoniker": "MetadataFilter.cs",
@@ -203,25 +257,24 @@
               "RelativeToolTip": "MetadataFilter.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T10:24:45.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T10:24:45.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "EventTimeoutManager.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\EventTimeoutManager.cs",
               "RelativeDocumentMoniker": "EventTimeoutManager.cs",
               "ToolTip": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\EventTimeoutManager.cs",
               "RelativeToolTip": "EventTimeoutManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T06:01:27.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "App.config",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -229,12 +282,11 @@
               "RelativeToolTip": "App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-06-18T07:28:55.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T07:28:55.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Test.cs",
               "DocumentMoniker": "D:\\GitBase\\Bosch_Metadata_Alert_Capture_v2\\Test.cs",
               "RelativeDocumentMoniker": "Test.cs",
